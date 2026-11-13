@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- Menandakan bahwa dokumen menggunakan HTML5. -->
+
+<html lang="id">
+<!-- Menentukan bahasa halaman. -->
+
+<head>
+    <!-- Bagian informasi halaman. -->
+
+    <meta charset="UTF-8">
+    <!-- Mendukung berbagai karakter dan simbol. -->
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <!-- Menyesuaikan tampilan dengan ukuran layar perangkat. -->
+
+    <title>Register - Focus Flow</title>
+    <!-- Judul yang muncul pada tab browser. -->
+
+    <link rel="stylesheet" href="- login-style.css">
+    <!-- Menggunakan CSS yang sama dengan halaman Login. -->
+</head>
+
+<body>
+    <!-- Bagian isi yang ditampilkan kepada pengguna. -->
+
+    <div class="login-container">
+        <!-- Wadah utama formulir pendaftaran.
+             Class ini sama dengan halaman Login supaya desainnya konsisten. -->
+
+        <h1>Create Account</h1>
+        <!-- Judul halaman pendaftaran. -->
+
+        <p>
+            Join Focus Flow and start your
+            productivity journey.
+        </p>
+        <!-- Keterangan singkat halaman. -->
+
+        <form id="register-form">
+            <!-- Formulir pendaftaran.
+                 ID register-form digunakan JavaScript untuk menemukan
+                 formulir ini dan memproses data pendaftaran. -->
+
+            <div class="input-group">
+                <!-- Wadah kolom nama. -->
+
+                <label for="name">Full Name</label>
+                <!-- Label yang terhubung dengan input ber-ID name. -->
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+                <!-- type="text" menerima tulisan biasa.
+                     id="name" menjadi penanda input nama.
+                     placeholder memberi petunjuk sebelum kolom diisi.
+                     required membuat kolom wajib diisi. -->
+            </div>
+
+
+            <div class="input-group">
+                <!-- Wadah kolom email. -->
+
+                <label for="email">Email</label>
+                <!-- Label untuk kolom email. -->
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+                <!-- type="email" digunakan untuk alamat email.
+                     id="email" menjadi penanda untuk JavaScript.
+                     placeholder memberi petunjuk pengisian.
+                     required membuat kolom wajib diisi. -->
+            </div>
+
+
+            <div class="input-group">
+                <!-- Wadah kolom password. -->
+
+                <label for="password">Password</label>
+                <!-- Label untuk kolom password. -->
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Create a password"
+                    required
+                >
+                <!-- type="password" menyamarkan karakter password.
+                     id="password" menjadi penanda kolom.
+                     placeholder memberi petunjuk kepada pengguna.
+                     required berarti wajib diisi. -->
+            </div>
+
+
+            <div class="input-group">
+                <!-- Wadah kolom konfirmasi password. -->
+
+                <label for="confirm-password">
+                    Confirm Password
+                </label>
+                <!-- Label untuk kolom konfirmasi password. -->
+
+                <input
+                    type="password"
+                    id="confirm-password"
+                    placeholder="Confirm your password"
+                    minlength="6"
+                    required
+                >
+                <!-- type="password" menyamarkan karakter.
+                     id="confirm-password" menjadi penanda input ini.
+                     placeholder memberi petunjuk pengisian.
+                     minlength="6" menetapkan panjang minimal 6 karakter.
+                     required membuat kolom wajib diisi. -->
+            </div>
+
+
+            <!-- Tombol untuk mengirim data pendaftaran. -->
+            <button type="submit" class="login-submit">
+                <!-- type="submit" membuat tombol mengirim formulir.
+                     class login-submit memakai desain tombol yang sama
+                     dengan halaman Login. -->
+                Create Account
+            </button>
+
+        </form>
+
+
+        <p class="register-text">
+            <!-- Teks untuk pengguna yang sudah memiliki akun. -->
+
+            Already have an account?
+
+            <a href="login.html">Login</a>
+            <!-- Tautan untuk kembali ke halaman Login. -->
+        </p>
+
+    </div>
+
+
+    <script type="module" src="script.js"></script>
+    <!-- Menghubungkan halaman Register dengan JavaScript.
+         type="module" diperlukan karena script.js menggunakan import
+         untuk mengambil fungsi dari Firebase. -->
+
+</body>
+</html>

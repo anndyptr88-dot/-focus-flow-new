@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- Memberi tahu browser bahwa dokumen ini menggunakan HTML5 -->
+
+<html lang="id">
+<!-- Elemen html adalah pembungkus seluruh halaman.
+     lang="id" memberi tahu browser bahwa bahasa halaman adalah Indonesia. -->
+
+<head>
+    <!-- Bagian head berisi informasi halaman yang tidak tampil
+         sebagai isi utama website. -->
+
+    <meta charset="UTF-8">
+    <!-- Mengatur karakter agar mendukung berbagai jenis teks,
+         termasuk huruf dan simbol. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Membuat ukuran halaman menyesuaikan lebar layar perangkat.
+         width=device-width mengikuti lebar perangkat.
+         initial-scale=1.0 mengatur skala awal halaman. -->
+
+    <title>Focus Flow</title>
+    <!-- Menentukan judul yang muncul pada tab browser. -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Menghubungkan HTML dengan file style.css.
+         rel="stylesheet" berarti file yang dihubungkan adalah CSS.
+         href berisi nama atau lokasi file CSS. -->
+</head>
+
+<body>
+    <!-- Body berisi semua elemen yang terlihat oleh pengguna. -->
+
+    <!-- 1. NAVBAR: bagian navigasi di atas halaman. -->
+    <nav class="navbar">
+        <!-- nav digunakan untuk mengelompokkan menu navigasi.
+             class="navbar" menjadi penanda agar bagian ini
+             bisa diatur tampilannya melalui CSS. -->
+
+        <div class="logo">
+            <!-- div adalah wadah untuk mengelompokkan elemen.
+                 class="logo" menandai bagian nama aplikasi. -->
+            Focus Flow
+        </div>
+
+        <ul class="nav-links">
+            <!-- ul adalah unordered list atau daftar tanpa nomor.
+                 class="nav-links" digunakan untuk mengatur tampilan daftar menu. -->
+
+            <li>
+                <!-- li adalah satu item atau isi dari daftar. -->
+                <a href="#">Home</a>
+                <!-- a adalah elemen tautan.
+                     href menentukan tujuan tautan.
+                     Tanda # berarti tautan ini belum diarahkan
+                     ke halaman atau bagian tertentu. -->
+            </li>
+
+            <li>
+                <a href="#">Features</a>
+                <!-- Menu Features. href="#" berarti belum memiliki tujuan khusus. -->
+            </li>
+
+            <li>
+                <a href="#">About</a>
+                <!-- Menu About. href="#" berarti belum memiliki tujuan khusus. -->
+            </li>
+        </ul>
+
+        <a href="login.html" class="login-link">
+            <!-- Tautan menuju halaman login.html.
+                 class="login-link" digunakan CSS untuk mengatur tampilannya. -->
+            Login
+        </a>
+    </nav>
+
+
+    <!-- 2. HERO SECTION: bagian utama yang memperkenalkan aplikasi. -->
+    <main class="hero">
+        <!-- main menandai isi utama halaman.
+             class="hero" menjadi penanda untuk pengaturan desain bagian utama. -->
+
+        <div class="hero-badge">
+            <!-- Wadah kecil untuk menampilkan label atau slogan. -->
+            ✨ Your Personal Productivity Space
+        </div>
+
+        <h1>
+            <!-- h1 adalah judul utama halaman.
+                 span digunakan untuk membungkus sebagian teks
+                 agar bisa diberi tampilan berbeda melalui CSS. -->
+            Focus <span>Flow</span>
+        </h1>
+
+        <p>
+            <!-- p digunakan untuk menampilkan paragraf atau keterangan. -->
+            Organize your tasks. Focus on what matters.
+            Make every day more productive.
+        </p>
+
+        <a href="register.html" class="hero-btn">
+            <!-- Tombol ini sebenarnya berupa tautan.
+                 Saat diklik, pengguna diarahkan ke halaman register.html.
+                 class="hero-btn" digunakan untuk mengatur tampilannya. -->
+            Get Started →
+        </a>
+    </main>
+
+
+    <!-- 3. JAVASCRIPT: menghubungkan halaman dengan file JavaScript. -->
+    <script type="module" src="script.js"></script>
+    <!-- script digunakan untuk menghubungkan JavaScript.
+         type="module" memungkinkan penggunaan import dan export.
+         src menentukan file JavaScript yang dijalankan.
+         Di proyek ini script.js juga menangani proses Firebase. -->
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- Menandakan bahwa dokumen menggunakan HTML5. -->
+
+<html lang="id">
+<!-- Menentukan bahasa halaman sebagai bahasa Indonesia. -->
+
+<head>
+    <!-- Bagian informasi halaman. -->
+
+    <meta charset="UTF-8">
+    <!-- Mendukung berbagai karakter dan simbol. -->
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <!-- Menyesuaikan tampilan dengan ukuran layar perangkat. -->
+
+    <title>Login - Focus Flow</title>
+    <!-- Judul yang muncul di tab browser. -->
+
+    <link rel="stylesheet" href="- login-style.css">
+    <!-- Menghubungkan halaman Login dengan file CSS.
+         Nama file harus sama persis, termasuk tanda minus dan spasinya. -->
+</head>
+
+<body>
+    <!-- Bagian yang menampilkan isi halaman. -->
+
+    <div class="login-container">
+        <!-- div menjadi wadah utama formulir Login.
+             class login-container dipakai CSS untuk mengatur
+             ukuran, posisi, warna, dan bentuk kartu Login. -->
+
+        <h1>Welcome Back!</h1>
+        <!-- h1 adalah judul utama halaman Login. -->
+
+        <p>
+            <!-- p menampilkan keterangan di bawah judul. -->
+            Login to continue your productivity journey.
+        </p>
+
+        <form id="login-form">
+            <!-- form mengelompokkan kolom dan tombol Login.
+                 id login-form menjadi penanda yang dicari JavaScript
+                 untuk menjalankan proses Login ketika formulir dikirim. -->
+
+            <div class="input-group">
+                <!-- Wadah untuk satu kelompok input, yaitu label dan kolom email. -->
+
+                <label for="email">Email</label>
+                <!-- label adalah keterangan kolom.
+                     for="email" menghubungkan label dengan input
+                     yang memiliki id="email". -->
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+                <!-- input membuat kolom untuk memasukkan data.
+                     type="email" menunjukkan bahwa isinya berupa email.
+                     id="email" menjadi penanda kolom untuk JavaScript.
+                     placeholder menampilkan contoh tulisan sebelum diisi.
+                     required membuat kolom wajib diisi. -->
+            </div>
+
+            <div class="input-group">
+                <!-- Wadah kelompok input password. -->
+
+                <label for="password">Password</label>
+                <!-- Label yang terhubung dengan kolom password. -->
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required
+                >
+                <!-- type="password" menyamarkan karakter yang diketik.
+                     id="password" menjadi penanda kolom password.
+                     placeholder memberi petunjuk kepada pengguna.
+                     required berarti kolom wajib diisi. -->
+            </div>
+
+            <button type="submit" class="login-submit">
+                <!-- button membuat tombol.
+                     type="submit" berarti tombol mengirim formulir.
+                     class login-submit digunakan CSS untuk mengatur desain tombol. -->
+                Login
+            </button>
+        </form>
+
+        <p class="register-text">
+            <!-- Paragraf untuk pengguna yang belum memiliki akun. -->
+
+            Don't have an account?
+
+            <a href="register.html">
+                <!-- a membuat tautan menuju halaman pendaftaran. -->
+                Register
+            </a>
+        </p>
+    </div>
+
+    <script type="module" src="script.js"></script>
+    <!-- Menghubungkan halaman dengan script.js.
+         type="module" diperlukan karena file JavaScript
+         menggunakan sistem import untuk Firebase. -->
+
+</body>
+</html>
